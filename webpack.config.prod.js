@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const MinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: 'production',
@@ -63,6 +64,12 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'css/styles.[contenthash].css',
+    }),
+
+    new CopyPlugin({
+      patterns: [
+        { from: "./manifest.json", to: "./manifest.json" },
+      ],
     }),
   ],
   optimization: {
