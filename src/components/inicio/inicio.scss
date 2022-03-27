@@ -1,0 +1,41 @@
+.quote-container {
+    width: 95%;
+    height: 100%;
+    background-color: whitesmoke;
+    opacity: 0.9;
+}
+
+.blockquote {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockquote::before {
+
+    content: "\201c";
+    font-size: 9rem;
+    position: absolute;
+    left: -4.3rem;
+    top: -2rem;
+    padding-left: 1rem;
+}
+
+.blockquote__text {
+    margin: 0;
+    font-family: var(--quote-font);
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.blockquote__author {
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    font-family: var(--author-font);
+    font-weight: bold;
+}
