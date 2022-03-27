@@ -39,3 +39,21 @@
     font-family: var(--author-font);
     font-weight: bold;
 }
+
+.buttons {
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    .bquote,.btweet {
+        cursor: pointer;
+        padding: 0.4rem 2rem;
+        border-radius: 10px;
+        color: whitesmoke;
+        background-color: black;
+        font-family: var(--author-font);
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}

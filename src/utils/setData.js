@@ -9,3 +9,8 @@ export const setData = () => {
       Author.innerHTML = author;
   });
 };
+
+export const setButtonsEvent = () => {
+  const bquote = document.querySelector('.bquote');
+  bquote.addEventListener("click",() => setData());
+}
