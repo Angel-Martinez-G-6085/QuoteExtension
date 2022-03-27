@@ -4,6 +4,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  width: 40rem;
 }
 
 :root {
@@ -42,7 +43,7 @@ img {
 .main-container {
   display: flex;
   max-width: 100vw;
-  min-height: 100vh;
+  min-height: 30rem;
   justify-content: center;
   align-items: center;
 }
